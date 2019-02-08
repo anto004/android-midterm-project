@@ -7,4 +7,139 @@
     tools:context=".DetailActivityFragment"
     tools:showIn="@layout/activity_detail">
 
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic[8]" />
+
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="TextView"
+        android:textSize="@dimen/TextSize18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_image" />
+
+    <CheckBox
+        android:id="@+id/like_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="CheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_image" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/details_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="57dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/details_value_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="230dp" />
+
+    <TextView
+        android:id="@+id/os_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/details_guideline"
+        app:layout_constraintEnd_toEndOf="@id/details_value_guideline"
+        app:layout_constraintTop_toBottomOf="@id/name_textView"
+        />
+
+    <TextView
+        android:id="@+id/os_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/details_value_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/like_checkbox"/>
+
+    <TextView
+        android:id="@+id/dimensions_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/details_guideline"
+        app:layout_constraintTop_toBottomOf="@id/os_textView"/>
+
+    <TextView
+        android:id="@+id/dimensions_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@id/details_value_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/os_value_textView"/>
+
+    <TextView
+        android:id="@+id/height_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/details_guideline"
+        app:layout_constraintEnd_toEndOf="@id/details_value_guideline"
+        app:layout_constraintTop_toBottomOf="@id/dimensions_textView"
+        />
+
+    <TextView
+        android:id="@+id/height_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/details_value_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dimensions_value_textView"/>
+
+    <TextView
+        android:id="@+id/width_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/details_guideline"
+        app:layout_constraintEnd_toEndOf="@id/details_value_guideline"
+        app:layout_constraintTop_toBottomOf="@id/height_textView"
+        />
+
+    <TextView
+        android:id="@+id/width_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@id/details_value_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/height_value_textView"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="548dp" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        app:layout_constraintTop_toBottomOf="@id/button_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
 </android.support.constraint.ConstraintLayout>
