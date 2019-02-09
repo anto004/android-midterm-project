@@ -68,13 +68,14 @@
                 app:layout_constraintGuide_begin="75dp" />
 
             <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="20dp"
-                android:layout_height="30dp"
+                android:id="@+id/heart_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite_black_18dp_copy"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@id/like_view_guideline"
-                app:layout_constraintTop_toBottomOf="@id/tablet_imageView"
-                tools:src="@tools:sample/avatars[12]" />
+                app:layout_constraintTop_toBottomOf="@id/tablet_imageView" />
+
         </android.support.constraint.ConstraintLayout>
 
     </LinearLayout>
