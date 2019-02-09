@@ -40,6 +40,11 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), DetailActivity.class);
+                intent.putExtra(DetailActivityFragment.DETAIL_NAME, "XPERIA-Z");
+                intent.putExtra(DetailActivityFragment.OS, "Windows");
+                intent.putExtra(DetailActivityFragment.WIDTH, "1920");
+                intent.putExtra(DetailActivityFragment.HEIGHT, "1200");
+                intent.putExtra(DetailActivityFragment.DETAIL_IMAGE, R.drawable.xperia_z_detail_image_copy);
                 startActivity(intent);
             }
         });
